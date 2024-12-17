@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive SVG Map</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Search Bar -->
+    <div class="controls">
+        <input type="text" id="search-input" placeholder="Search location..." />
+    </div>
+
+    <!-- Map Container -->
+    <div id="map-container">
+        <svg id="map" xmlns="http://www.w3.org/2000/svg">
+            <!-- The SVG content will be dynamically loaded -->
+        </svg>
+    </div>
+
+    <!-- Zoom Controls (with + and - on the same row and reset button to the right of minus) -->
+    <div class="zoom-controls">
+        <button id="zoom-in" class="zoom-button">+</button>
+        <button id="zoom-out" class="zoom-button">-</button>
+        <button id="reset-view" class="reset-button">↻</button>
+    </div>
+
+    <!-- Info Box -->
+    <div id="info-box" class="info-box"></div>
+
+    <!-- Link to the JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
